@@ -16,7 +16,6 @@ public class WireSocket : MonoBehaviour
         
         if (collision.gameObject.gameObject.tag == "WireConnectingSocket" && !isSocketAttached)
         {
-            Debug.Log(collision.gameObject.name);
             attachedConnectingSocket = collision.gameObject;
             isSocketAttached = true;
         }
@@ -26,7 +25,6 @@ public class WireSocket : MonoBehaviour
     {
         if (attachedConnectingSocket == collision.gameObject && isSocketAttached)
         {
-            Debug.Log(collision.gameObject.name);
             attachedConnectingSocket = null;
             isSocketAttached = false;
         }
@@ -39,7 +37,6 @@ public class WireSocket : MonoBehaviour
 
     public void GetEnergy(int amount)
     {
-        Debug.Log("WireSocketGet");
         attachedConnectingSocket.GetComponent<WireConnectingSocket>().GetEnergy(amount);
     }
 
@@ -47,7 +44,6 @@ public class WireSocket : MonoBehaviour
     {
         if(ownWireConnector.GetCounterSideConnector().GetWireSocket().isSocketAttached)
         {
-            Debug.Log("WireSocketSend");
             ownWireConnector.GetCounterSideConnector().GetWireSocket().GetEnergy(amount);
         }
     }

@@ -14,6 +14,10 @@ public class TowerAttackCannon : MonoBehaviour
     private GameObject cannonBallPrefab;
     [SerializeField]
     private Transform bulletParents;
+    [SerializeField]
+    private Animator cannonAnimator;
+    private bool isRifleFirstShooting = true;
+
     int bulletIndex = 0;
 
     public void GetEnergy(int energy)
@@ -34,6 +38,16 @@ public class TowerAttackCannon : MonoBehaviour
 
     public void ShootCannon()
     {
+        if(transform.GetChild(0).childCount == 2)
+        {
+            cannonAnimator.SetBool("isFirst", isRifleFirstShooting);
+            isRifleFirstShooting = !isRifleFirstShooting;
+            cannonAnimator.SetTrigger("Shoot");
+        }
+        else
+        {
+            cannonAnimator.SetTrigger("Shoot");
+        }
         GameObject a = Instantiate(cannonBallPrefab, cannonFirePos[bulletIndex]);
         a.transform.SetParent(bulletParents);
         BulletIndexIncrease();

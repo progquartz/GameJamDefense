@@ -38,7 +38,6 @@ public class PowerModule : MonoBehaviour
             
             if(wireConnectingSockets[i].isSocketAttached)
             {
-                Debug.Log("EnergyInput" + i);
                 wireConnectingSockets[i].SendEnergy(amountEachConnector);
             }
         }
