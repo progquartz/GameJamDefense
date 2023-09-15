@@ -13,7 +13,7 @@ public class HoldingObjects : MonoBehaviour
 
     private float holdingTime = 0.0f;
     [SerializeField]
-    private float holdTimeNeeded = 1.0f;
+    private float holdTimeNeeded = 0.5f;
 
     public bool isHoldingObject = false;
     void Update()
@@ -28,6 +28,7 @@ public class HoldingObjects : MonoBehaviour
             {
                 // holdingObject.GetComponent<> // holdingobject의 hold 풀음 관련으로 함수 콜업.
                 holdingObject = null;
+                UnholdObject();
             }
             clickedObject = null;
             holdingTime = 0;
@@ -37,12 +38,12 @@ public class HoldingObjects : MonoBehaviour
 
         if(clickedObject != null)
         {
-            if(clickedObject.tag == "Rotatable")
+            if(clickedObject.tag == "Rotatable" || clickedObject.tag == "TowerAttackCannon")
             {
                 holdingObject = clickedObject;
                 isHoldingObject = true;
             }
-            else if(clickedObject.tag == "Movable")
+            else if(clickedObject.tag == "Movable" || clickedObject.tag == "TowerAttackBase" || clickedObject.tag == "TowerBase")
             {
                 holdingTime += Time.deltaTime;
                 if (holdingTime >= holdTimeNeeded)
@@ -59,13 +60,21 @@ public class HoldingObjects : MonoBehaviour
         }
     }
 
+    private void UnholdObject()
+    {
+        if(clickedObject.tag == "TowerAttackBase" || clickedObject.tag == "TowerBase")
+        {
+            clickedObject.GetComponent<BaseWithSocket>().UnholdFromMouse();
+        }
+    }
+
     private void InteractObject()
     {
-        if(holdingObject.tag == "Movable")
+        if(holdingObject.tag == "TowerBase" || holdingObject.tag == "TowerAttackBase")
         {
             MoveObject();
         }
-        if(holdingObject.tag == "Rotatable")
+        if(holdingObject.tag == "TowerAttackCannon")
         {
             RotateObject();
         }
@@ -107,7 +116,7 @@ public class HoldingObjects : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
         if (hit.collider != null)
         {
-            if(hit.collider.gameObject.tag == "Movable" || hit.collider.gameObject.tag == "Rotatable")
+            if(hit.collider.gameObject.tag == "TowerBase" || hit.collider.gameObject.tag == "TowerAttackBase" || hit.collider.gameObject.tag == "TowerAttackCannon")
             {
                 clickedObject = hit.collider.gameObject;
                 Debug.Log(hit.collider.gameObject.name);
