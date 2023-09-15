@@ -21,12 +21,12 @@ public class WireConnectingSocket : MonoBehaviour
     private void Start()
     {
         ownParentModule = transform.parent.parent.gameObject;
-        switch (ownParentModule.name)
+        switch (ownParentModule.tag)
         {
-            case "TowerBaseModule":
+            case "TowerBase":
                 parentModuleType = ParentModuleType.TOWERBASEMODULE;
                 break;
-            case "PowerModule":
+            case "Power":
                 parentModuleType = ParentModuleType.POWERMODULE;
                 break;
         }
@@ -63,7 +63,6 @@ public class WireConnectingSocket : MonoBehaviour
 
     public void SendEnergy(int amount)
     {
-        Debug.Log("WireConnectingSocketSend");
         attachedSocket.GetComponent<WireSocket>().SendEnergy(amount);
     }
 
@@ -71,7 +70,6 @@ public class WireConnectingSocket : MonoBehaviour
     {
         if(parentModuleType == ParentModuleType.TOWERBASEMODULE)
         {
-            Debug.Log("WireConnectingSocketGet");
             ownParentModule.GetComponent<TowerBase>().GetEnergy(amount);
         }
     }

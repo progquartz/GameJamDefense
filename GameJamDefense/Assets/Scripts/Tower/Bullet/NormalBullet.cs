@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class NormalBullet : MonoBehaviour
 {
+    [SerializeField]
+    private int damage = 3;
+    [SerializeField]
     private float speed = 5.0f;
 
     // Start is called before the first frame update
@@ -18,12 +21,15 @@ public class NormalBullet : MonoBehaviour
         transform.Translate(new Vector3(1,0,0) * speed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(other.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy")
         {
+            collision.gameObject.GetComponent<EnemyTargetingAndMoving>().GetDamage(damage);
             Destroy(this.gameObject);
+
         }
+
     }
 
 

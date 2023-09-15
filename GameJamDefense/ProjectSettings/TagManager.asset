@@ -12,6 +12,7 @@ TagManager:
   - WireSocket
   - WireConnectingSocket
   - Power
+  - Enemy
   layers:
   - Default
   - TransparentFX
