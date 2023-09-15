@@ -43,7 +43,7 @@ public class HoldingObjects : MonoBehaviour
                 holdingObject = clickedObject;
                 isHoldingObject = true;
             }
-            else if(clickedObject.tag == "Movable" || clickedObject.tag == "TowerAttackBase" || clickedObject.tag == "TowerBase")
+            else if(clickedObject.tag == "Movable" || clickedObject.tag == "TowerAttackBase" || clickedObject.tag == "TowerBase" || clickedObject.tag == "WireConnector")
             {
                 holdingTime += Time.deltaTime;
                 if (holdingTime >= holdTimeNeeded)
@@ -66,11 +66,15 @@ public class HoldingObjects : MonoBehaviour
         {
             clickedObject.GetComponent<BaseWithSocket>().UnholdFromMouse();
         }
+        if(clickedObject.tag == "WireConnector")
+        {
+            clickedObject.GetComponent<WireConnector>().UnholdFromMouse();
+        }
     }
 
     private void InteractObject()
     {
-        if(holdingObject.tag == "TowerBase" || holdingObject.tag == "TowerAttackBase")
+        if(holdingObject.tag == "TowerBase" || holdingObject.tag == "TowerAttackBase" || holdingObject.tag == "WireConnector")
         {
             MoveObject();
         }
@@ -116,7 +120,7 @@ public class HoldingObjects : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
         if (hit.collider != null)
         {
-            if(hit.collider.gameObject.tag == "TowerBase" || hit.collider.gameObject.tag == "TowerAttackBase" || hit.collider.gameObject.tag == "TowerAttackCannon")
+            if(hit.collider.gameObject.tag == "TowerBase" || hit.collider.gameObject.tag == "TowerAttackBase" || hit.collider.gameObject.tag == "TowerAttackCannon" || hit.collider.gameObject.tag == "WireConnector")
             {
                 clickedObject = hit.collider.gameObject;
                 Debug.Log(hit.collider.gameObject.name);

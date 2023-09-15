@@ -12,7 +12,7 @@ public class TowerAttackCannon : MonoBehaviour
     private Transform cannonFirePos;
 
 
-    public void PutEnergy(int energy)
+    public void GetEnergy(int energy)
     {
         electricityGot += energy;
         if(electricityGot >= electricityCap)

@@ -9,6 +9,8 @@ TagManager:
   - TowerBase
   - TowerAttackCannon
   - WireConnector
+  - WireSocket
+  - WireConnectingSocket
   layers:
   - Default
   - TransparentFX

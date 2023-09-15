@@ -13,7 +13,7 @@ public class WireSocket : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.gameObject.name);
-        if ((collision.gameObject.tag == "TowerAttackBase" && this.gameObject.tag == "TowerBase") || (collision.gameObject.tag == "TowerBase" && this.gameObject.tag == "TowerAttackBase") && !isSocketAttached)
+        if (collision.gameObject.gameObject.tag == "WireConnectingSocket" && !isSocketAttached)
         {
             attachedObject = collision.gameObject;
             isSocketAttached = true;

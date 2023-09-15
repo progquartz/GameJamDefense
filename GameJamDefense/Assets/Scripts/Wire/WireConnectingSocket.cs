@@ -9,11 +9,15 @@ public class WireConnectingSocket : MonoBehaviour
     [SerializeField]
     private GameObject attachedObject = null;
 
+    public Transform GetConnectorPosition()
+    {
+        return this.transform.GetChild(0).GetComponent<Transform>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.gameObject.name);
-        if ((collision.gameObject.tag == "WireSocket") && !isSocketAttached)
+        if (collision.gameObject.tag == "WireSocket" && !isSocketAttached)
         {
             attachedObject = collision.gameObject;
             isSocketAttached = true;
