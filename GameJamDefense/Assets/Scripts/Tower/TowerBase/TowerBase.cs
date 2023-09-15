@@ -25,11 +25,12 @@ public class TowerBase : BaseWithSocket
         return attackBaseSocket.isSocketAttached;
     }
 
-    public void PutEnergy(int energy)
+    public void GetEnergy(int energy)
     {
+        Debug.Log("TowerBase Got Energy!");
         if(attackBaseSocket.isSocketAttached)
         {
-            attackBaseSocket.GetObjectAttached().GetComponent<TowerAttackBase>().PutCannonEnergy(energy);
+            attackBaseSocket.GetObjectAttached().GetComponent<TowerAttackBase>().GetEnergy(energy);
         }
     }
 

@@ -35,9 +35,9 @@ public class TowerAttackBase : BaseWithSocket
 
     }
 
-    public void PutCannonEnergy(int energy)
+    public void GetEnergy(int energy)
     {
-        attackCannon.PutEnergy(energy);
+        attackCannon.GetEnergy(energy);
     }
 
 

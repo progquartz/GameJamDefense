@@ -1,103 +1,79 @@
 fileFormatVersion: 2
-guid: 788d5f94f894244458511611e42c08b3
+guid: 24325d6880562234298746e875fd1093
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4608048447754632782
-    second: Monsters_0
+      213: 1390020125895104908
+    second: AttackCannonNormal_0
   - first:
-      213: 7004475837440150029
-    second: Monsters_1
+      213: -1718198034032247857
+    second: AttackCannonNormal_1
   - first:
-      213: -7181651816591611541
-    second: Monsters_2
+      213: -3896537726008582263
+    second: AttackCannonNormal_2
   - first:
-      213: -8475454869906208948
-    second: Monsters_3
+      213: -6715395886366499762
+    second: AttackCannonNormal_3
   - first:
-      213: 2340025546474775938
-    second: Monsters_4
+      213: -69851035547035065
+    second: AttackCannonNormal_4
   - first:
-      213: 1576349645687122901
-    second: Monsters_5
+      213: -2257307862651493840
+    second: AttackCannonNormal_5
   - first:
-      213: -6936802713903867097
-    second: Monsters_6
+      213: 1731542164567066115
+    second: AttackCannonNormal_6
   - first:
-      213: 5580213392679395797
-    second: Monsters_7
+      213: -6093154387720682108
+    second: AttackCannonNormal_7
   - first:
-      213: -3373532965053463481
-    second: Monsters_8
+      213: 3534269975892106810
+    second: AttackCannonNormal_8
   - first:
-      213: 6446785247130113390
-    second: Monsters_9
+      213: -2506452165867235567
+    second: AttackCannonNormal_9
   - first:
-      213: 431548292649282839
-    second: Monsters_10
+      213: 5581882895738924404
+    second: AttackCannonNormal_10
   - first:
-      213: -4491697800043306815
-    second: Monsters_11
+      213: -9083562905003557804
+    second: AttackCannonNormal_11
   - first:
-      213: 1837611224968631888
-    second: Monsters_12
+      213: -7787496722371623674
+    second: AttackCannonNormal_12
   - first:
-      213: 8563587851878821166
-    second: Monsters_13
+      213: 4256035310015356302
+    second: AttackCannonNormal_13
   - first:
-      213: -7430853849531595559
-    second: Monsters_14
+      213: -6747255244249914746
+    second: AttackCannonNormal_14
   - first:
-      213: 8615779821244086437
-    second: Monsters_15
+      213: -1058151986511613408
+    second: AttackCannonNormal_15
   - first:
-      213: 8723854756932198112
-    second: Monsters_16
+      213: 5557523588342962911
+    second: AttackCannonNormal_16
   - first:
-      213: -2869675963118524337
-    second: Monsters_17
+      213: 7848965100331141156
+    second: AttackCannonNormal_17
   - first:
-      213: 7289893004088466946
-    second: Monsters_18
+      213: -13753825790591779
+    second: AttackCannonNormal_18
   - first:
-      213: 2614772574368822691
-    second: Monsters_19
+      213: -1313635611591111404
+    second: AttackCannonNormal_19
   - first:
-      213: -3349568769836083936
-    second: Monsters_20
+      213: -8013161697876264547
+    second: AttackCannonNormal_20
   - first:
-      213: -4941218315134205024
-    second: Monsters_21
+      213: 2109122710866054886
+    second: AttackCannonNormal_21
   - first:
-      213: -8330613937328587152
-    second: Monsters_22
+      213: -1193664860309108992
+    second: AttackCannonNormal_22
   - first:
-      213: 6109658745100962220
-    second: Monsters_23
-  - first:
-      213: 1284544809393795556
-    second: Monsters_24
-  - first:
-      213: 415880618143167583
-    second: Monsters_25
-  - first:
-      213: -4409354720557203851
-    second: Monsters_26
-  - first:
-      213: -534992481189267106
-    second: Monsters_27
-  - first:
-      213: -7470663463447931316
-    second: Monsters_28
-  - first:
-      213: 4722039178146844704
-    second: Monsters_29
-  - first:
-      213: 2580697954514063400
-    second: Monsters_30
-  - first:
-      213: 4706514203645581601
-    second: Monsters_31
+      213: -6295541457109821925
+    second: AttackCannonNormal_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -128,7 +104,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -164,7 +140,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -176,7 +152,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -188,7 +164,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -199,180 +175,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Monsters_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1200
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4e743416a313ff30800000000000000
-      internalID: 4608048447754632782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_1
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 1200
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0a4d60b9a5e43160800000000000000
-      internalID: 7004475837440150029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_2
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 1200
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b69a48b09b5a55c90800000000000000
-      internalID: -7181651816591611541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_3
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 1200
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c47c26163b2216a80800000000000000
-      internalID: -8475454869906208948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_4
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 1200
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 285e7f626d0797020800000000000000
-      internalID: 2340025546474775938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_5
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 1200
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5db6ef0a6a150e510800000000000000
-      internalID: 1576349645687122901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_6
-      rect:
-        serializedVersion: 2
-        x: 2400
-        y: 1200
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72b5bc83fa68bbf90800000000000000
-      internalID: -6936802713903867097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_7
-      rect:
-        serializedVersion: 2
-        x: 2800
-        y: 1200
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d16881f386e07d40800000000000000
-      internalID: 5580213392679395797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_8
+      name: AttackCannonNormal_0
       rect:
         serializedVersion: 2
         x: 0
         y: 800
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -381,40 +189,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7440beb54adce21d0800000000000000
-      internalID: -3373532965053463481
+      spriteID: c891f9a90f75a4310800000000000000
+      internalID: 1390020125895104908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_9
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 800
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e655b669605977950800000000000000
-      internalID: 6446785247130113390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_10
+      name: AttackCannonNormal_1
       rect:
         serializedVersion: 2
         x: 800
         y: 800
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -423,40 +210,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71d69ceb2ea2df500800000000000000
-      internalID: 431548292649282839
+      spriteID: fcbbbbfcdfbb728e0800000000000000
+      internalID: -1718198034032247857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_11
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 800
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c0e30e16a84aa1c0800000000000000
-      internalID: -4491697800043306815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_12
+      name: AttackCannonNormal_2
       rect:
         serializedVersion: 2
         x: 1600
         y: 800
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -465,40 +231,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 056968b4ca1808910800000000000000
-      internalID: 1837611224968631888
+      spriteID: 98f995b3597bce9c0800000000000000
+      internalID: -3896537726008582263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_13
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 800
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2d661a87c9f7d670800000000000000
-      internalID: 8563587851878821166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_14
+      name: AttackCannonNormal_3
       rect:
         serializedVersion: 2
         x: 2400
         y: 800
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -507,19 +252,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d443d05bcd40e890800000000000000
-      internalID: -7430853849531595559
+      spriteID: e4c5103650f1ec2a0800000000000000
+      internalID: -6715395886366499762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_15
+      name: AttackCannonNormal_4
       rect:
         serializedVersion: 2
-        x: 2800
+        x: 3200
         y: 800
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -528,19 +273,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a87b3c5916619770800000000000000
-      internalID: 8615779821244086437
+      spriteID: 74a960f6ad6d70ff0800000000000000
+      internalID: -69851035547035065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_16
+      name: AttackCannonNormal_5
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 800
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03226f9657e6ca0e0800000000000000
+      internalID: -2257307862651493840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackCannonNormal_6
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 800
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30681a0bc6ca70810800000000000000
+      internalID: 1731542164567066115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackCannonNormal_7
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 800
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485cb460e54c07ba0800000000000000
+      internalID: -6093154387720682108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackCannonNormal_8
       rect:
         serializedVersion: 2
         x: 0
         y: 400
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -549,40 +357,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ee9b033eab511970800000000000000
-      internalID: 8723854756932198112
+      spriteID: a3e906551df3c0130800000000000000
+      internalID: 3534269975892106810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_17
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 400
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f48e7dd6aecdc28d0800000000000000
-      internalID: -2869675963118524337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_18
+      name: AttackCannonNormal_9
       rect:
         serializedVersion: 2
         x: 800
         y: 400
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -591,40 +378,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20e5c4f4017ea2560800000000000000
-      internalID: 7289893004088466946
+      spriteID: 11799fee80b473dd0800000000000000
+      internalID: -2506452165867235567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_19
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 400
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a5ffaf7dc9894420800000000000000
-      internalID: 2614772574368822691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_20
+      name: AttackCannonNormal_10
       rect:
         serializedVersion: 2
         x: 1600
         y: 400
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -633,40 +399,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0259d2b53f0f381d0800000000000000
-      internalID: -3349568769836083936
+      spriteID: 47de85a6be4d67d40800000000000000
+      internalID: 5581882895738924404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_21
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 400
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a385c04f144d6bb0800000000000000
-      internalID: -4941218315134205024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_22
+      name: AttackCannonNormal_11
       rect:
         serializedVersion: 2
         x: 2400
         y: 400
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -675,19 +420,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07e7c90f2c6b36c80800000000000000
-      internalID: -8330613937328587152
+      spriteID: 45cf8582aa3b0f180800000000000000
+      internalID: -9083562905003557804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_23
+      name: AttackCannonNormal_12
       rect:
         serializedVersion: 2
-        x: 2800
+        x: 3200
         y: 400
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -696,19 +441,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca90a90224ed9c450800000000000000
-      internalID: 6109658745100962220
+      spriteID: 605458dadf04de390800000000000000
+      internalID: -7787496722371623674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_24
+      name: AttackCannonNormal_13
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 400
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d1cf4a099701b30800000000000000
+      internalID: 4256035310015356302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackCannonNormal_14
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 400
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682a7959a1fec52a0800000000000000
+      internalID: -6747255244249914746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackCannonNormal_15
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 400
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022f995ef50b051f0800000000000000
+      internalID: -1058151986511613408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackCannonNormal_16
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -717,40 +525,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e13df5c2be93d110800000000000000
-      internalID: 1284544809393795556
+      spriteID: fda5902324a402d40800000000000000
+      internalID: 5557523588342962911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_25
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f54b461083185c500800000000000000
-      internalID: 415880618143167583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_26
+      name: AttackCannonNormal_17
       rect:
         serializedVersion: 2
         x: 800
         y: 0
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -759,40 +546,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57efe705e33dec2c0800000000000000
-      internalID: -4409354720557203851
+      spriteID: 4280da35c202dec60800000000000000
+      internalID: 7848965100331141156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_27
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5975314c235398f0800000000000000
-      internalID: -534992481189267106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_28
+      name: AttackCannonNormal_18
       rect:
         serializedVersion: 2
         x: 1600
         y: 0
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -801,40 +567,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4652b8492fd25890800000000000000
-      internalID: -7470663463447931316
+      spriteID: ddcf273e7f22fcff0800000000000000
+      internalID: -13753825790591779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_29
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0209be43d9d088140800000000000000
-      internalID: 4722039178146844704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monsters_30
+      name: AttackCannonNormal_19
       rect:
         serializedVersion: 2
         x: 2400
         y: 0
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -843,19 +588,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8205363dd1b70d320800000000000000
-      internalID: 2580697954514063400
+      spriteID: 41d0fc60f5705cde0800000000000000
+      internalID: -1313635611591111404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monsters_31
+      name: AttackCannonNormal_20
       rect:
         serializedVersion: 2
-        x: 2800
+        x: 3200
         y: 0
-        width: 400
+        width: 800
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -864,8 +609,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12910a66bb5e05140800000000000000
-      internalID: 4706514203645581601
+      spriteID: d99b15e24e78bc090800000000000000
+      internalID: -8013161697876264547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackCannonNormal_21
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee41e05eeb154d10800000000000000
+      internalID: 2109122710866054886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackCannonNormal_22
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007c86442204f6fe0800000000000000
+      internalID: -1193664860309108992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackCannonNormal_23
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 0
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b165934666eb1a8a0800000000000000
+      internalID: -6295541457109821925
       vertices: []
       indices: 
       edges: []

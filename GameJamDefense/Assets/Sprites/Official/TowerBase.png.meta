@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: e80c67760fa1c58419573d00ad5fe83b
+guid: 37fc6f7fd5a3bea4b96e9c3f562764b4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4861941178703029536
-    second: AttackCannon2_0
+      213: 5075230056192899191
+    second: TowerBase_0
   - first:
-      213: -792845822293278188
-    second: AttackCannon2_1
+      213: 7921731053811611534
+    second: TowerBase_1
   - first:
-      213: -2728078508295974130
-    second: AttackCannon2_2
+      213: -2105860346893036930
+    second: TowerBase_2
   - first:
-      213: 8012519939667886908
-    second: AttackCannon2_3
-  - first:
-      213: -1606471957691831859
-    second: AttackCannon2_4
-  - first:
-      213: 6546578840357287364
-    second: AttackCannon2_5
-  - first:
-      213: 7682770673815683521
-    second: AttackCannon2_6
-  - first:
-      213: 2394599274681947177
-    second: AttackCannon2_7
+      213: -4162489267526915418
+    second: TowerBase_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,13 +115,76 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AttackCannon2_0
+      name: TowerBase_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77873cca8d6de6640800000000000000
+      internalID: 5075230056192899191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerBase_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e873f9c1c64afed60800000000000000
+      internalID: 7921731053811611534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerBase_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e721cdcfb2b76c2e0800000000000000
+      internalID: -2105860346893036930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerBase_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 600
-        height: 300
+        width: 500
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,155 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eadf84f14ae68cb0800000000000000
-      internalID: -4861941178703029536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackCannon2_1
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 600
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4128e80ecee3ff4f0800000000000000
-      internalID: -792845822293278188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackCannon2_2
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 600
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0314a9fc0be32ad0800000000000000
-      internalID: -2728078508295974130
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackCannon2_3
-      rect:
-        serializedVersion: 2
-        x: 1800
-        y: 0
-        width: 600
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3383a7de60323f60800000000000000
-      internalID: 8012519939667886908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackCannon2_4
-      rect:
-        serializedVersion: 2
-        x: 2400
-        y: 0
-        width: 600
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc9e624144aa4b9e0800000000000000
-      internalID: -1606471957691831859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackCannon2_5
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 0
-        width: 600
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c5b59125ce1ada50800000000000000
-      internalID: 6546578840357287364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackCannon2_6
-      rect:
-        serializedVersion: 2
-        x: 3600
-        y: 0
-        width: 600
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c18297093fae9a60800000000000000
-      internalID: 7682770673815683521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackCannon2_7
-      rect:
-        serializedVersion: 2
-        x: 4200
-        y: 0
-        width: 600
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92453da6a535b3120800000000000000
-      internalID: 2394599274681947177
+      spriteID: 6aaaea3a01edb36c0800000000000000
+      internalID: -4162489267526915418
       vertices: []
       indices: 
       edges: []

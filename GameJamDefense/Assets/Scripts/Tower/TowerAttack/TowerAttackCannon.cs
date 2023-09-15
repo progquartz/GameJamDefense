@@ -7,16 +7,22 @@ public class TowerAttackCannon : MonoBehaviour
     [SerializeField]
     private int electricityGot = 0;
     
-    public int electricityCap = 0;
+    public int electricityCap = 5;
     [SerializeField]
     private Transform cannonFirePos;
+    [SerializeField]
+    private GameObject cannonBallPrefab;
+    [SerializeField]
+    private Transform bulletParent;
 
 
-    public void PutEnergy(int energy)
+    public void GetEnergy(int energy)
     {
+        Debug.Log(electricityGot + " / " + electricityCap);
         electricityGot += energy;
         if(electricityGot >= electricityCap)
         {
+            Debug.Log("Fire!");
             electricityGot -= electricityCap;
             ShootCannon();
         }
@@ -29,17 +35,7 @@ public class TowerAttackCannon : MonoBehaviour
 
     public void ShootCannon()
     {
-
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject a = Instantiate(cannonBallPrefab, cannonFirePos);
+        a.transform.SetParent(bulletParent);
     }
 }
