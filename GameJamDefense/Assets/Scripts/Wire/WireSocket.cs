@@ -7,31 +7,47 @@ public class WireSocket : MonoBehaviour
     [SerializeField]
     public bool isSocketAttached = false;
     [SerializeField]
-    private GameObject attachedObject = null;
+    private GameObject attachedConnectingSocket = null;
+    public WireConnector ownWireConnector;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+        
         if (collision.gameObject.gameObject.tag == "WireConnectingSocket" && !isSocketAttached)
         {
-            attachedObject = collision.gameObject;
+            Debug.Log(collision.gameObject.name);
+            attachedConnectingSocket = collision.gameObject;
             isSocketAttached = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
-        if (attachedObject == collision.gameObject)
+        if (attachedConnectingSocket == collision.gameObject)
         {
-            attachedObject = null;
+            Debug.Log(collision.gameObject.name);
+            attachedConnectingSocket = null;
             isSocketAttached = false;
         }
     }
 
     public GameObject GetObjectAttached()
     {
-        return attachedObject;
+        return attachedConnectingSocket;
     }
+
+    public void GetEnergy(int amount)
+    {
+        attachedConnectingSocket.GetComponent<WireConnectingSocket>().GetEnergy(amount);
+    }
+
+    public void SendEnergy(int amount)
+    {
+        if(ownWireConnector.GetCounterSideConnector().GetWireSocket().isSocketAttached)
+        {
+            ownWireConnector.GetCounterSideConnector().GetWireSocket().GetEnergy(amount);
+        }
+    }
+
 }

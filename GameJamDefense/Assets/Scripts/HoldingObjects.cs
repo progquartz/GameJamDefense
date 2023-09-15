@@ -76,6 +76,10 @@ public class HoldingObjects : MonoBehaviour
     {
         if(holdingObject.tag == "TowerBase" || holdingObject.tag == "TowerAttackBase" || holdingObject.tag == "WireConnector")
         {
+            if(holdingObject.tag == "WireConnector")
+            {
+                holdingObject.GetComponent<WireConnector>().isBeingHolded = true;
+            }
             MoveObject();
         }
         if(holdingObject.tag == "TowerAttackCannon")
@@ -109,8 +113,7 @@ public class HoldingObjects : MonoBehaviour
         {
             angle =  Mathf.Atan2(normVec.x, normVec.y) * Mathf.Rad2Deg;
         }
-        Debug.Log(angle);
-        holdingObject.transform.rotation = Quaternion.Euler(0, 0, -angle);
+        holdingObject.transform.rotation = Quaternion.Euler(0, 0, -angle + 90);
     }
 
 

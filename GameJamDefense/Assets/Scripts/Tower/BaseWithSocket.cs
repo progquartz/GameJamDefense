@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BaseWithSocket : MonoBehaviour
 {
-    
     public virtual void UnholdFromMouse()
     {
 

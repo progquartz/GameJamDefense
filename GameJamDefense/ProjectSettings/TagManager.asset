@@ -11,6 +11,7 @@ TagManager:
   - WireConnector
   - WireSocket
   - WireConnectingSocket
+  - Power
   layers:
   - Default
   - TransparentFX
