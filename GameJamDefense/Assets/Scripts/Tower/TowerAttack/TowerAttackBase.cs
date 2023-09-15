@@ -37,6 +37,7 @@ public class TowerAttackBase : BaseWithSocket
 
     public void GetEnergy(int energy)
     {
+        Debug.Log("TowerAttackBaseGet");
         attackCannon.GetEnergy(energy);
     }
 

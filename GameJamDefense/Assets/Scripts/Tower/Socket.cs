@@ -12,18 +12,19 @@ public class Socket : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
-        if ((collision.gameObject.tag == "TowerAttackBase" && this.gameObject.tag == "TowerBase") || (collision.gameObject.tag == "TowerBase" && this.gameObject.tag == "TowerAttackBase") && !isSocketAttached)
+        if(!isSocketAttached)
         {
-            attachedObject = collision.gameObject;
-            isSocketAttached = true;
+            if ((collision.gameObject.tag == "TowerAttackBase" && this.gameObject.tag == "TowerBase") || (collision.gameObject.tag == "TowerBase" && this.gameObject.tag == "TowerAttackBase") && !isSocketAttached)
+            {
+                attachedObject = collision.gameObject;
+                isSocketAttached = true;
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
-        if (attachedObject == collision.gameObject)
+        if (attachedObject == collision.gameObject && isSocketAttached)
         {
             attachedObject = null;
             isSocketAttached = false;

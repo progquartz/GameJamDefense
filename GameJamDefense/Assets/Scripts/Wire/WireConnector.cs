@@ -47,6 +47,7 @@ public class WireConnector : MonoBehaviour
 
     public WireSocket GetWireSocket()
     {
+        Debug.Log("WireConnectorGetWireSocket");
         return wireSocket;
     }
 
