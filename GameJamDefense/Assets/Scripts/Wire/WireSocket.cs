@@ -24,7 +24,7 @@ public class WireSocket : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (attachedConnectingSocket == collision.gameObject)
+        if (attachedConnectingSocket == collision.gameObject && isSocketAttached)
         {
             Debug.Log(collision.gameObject.name);
             attachedConnectingSocket = null;
@@ -39,6 +39,7 @@ public class WireSocket : MonoBehaviour
 
     public void GetEnergy(int amount)
     {
+        Debug.Log("WireSocketGet");
         attachedConnectingSocket.GetComponent<WireConnectingSocket>().GetEnergy(amount);
     }
 
@@ -46,6 +47,7 @@ public class WireSocket : MonoBehaviour
     {
         if(ownWireConnector.GetCounterSideConnector().GetWireSocket().isSocketAttached)
         {
+            Debug.Log("WireSocketSend");
             ownWireConnector.GetCounterSideConnector().GetWireSocket().GetEnergy(amount);
         }
     }
