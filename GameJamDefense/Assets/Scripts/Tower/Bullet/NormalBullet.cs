@@ -25,8 +25,16 @@ public class NormalBullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.GetComponent<EnemyTargetingAndMoving>().GetDamage(damage);
-            Destroy(this.gameObject);
+            EnemyTargetingAndMoving a = collision.gameObject.GetComponent<EnemyTargetingAndMoving>();
+            if(a != null)
+            {
+                a.GetDamage(damage);
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
 
         }
 

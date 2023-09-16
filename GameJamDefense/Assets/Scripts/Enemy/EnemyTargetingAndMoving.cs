@@ -57,6 +57,7 @@ public class EnemyTargetingAndMoving : MonoBehaviour
     private void GetClosestBuilding()
     {
         GatherData();
+        CheckGameOver();
         FindClosest();
         FlushData();
         
@@ -88,6 +89,16 @@ public class EnemyTargetingAndMoving : MonoBehaviour
         }
     }
 
+    private void CheckGameOver()
+    {
+        if(allTargetableObjects.Count == 0)
+        {
+            GameManager.instance.isGameOver = true;
+            GameObject tmp = new GameObject();
+            tmp.transform.position = new Vector3(-200, 540, 0);
+            allTargetableObjects.Add(tmp.transform);
+        }
+    }
     private void FindClosest()
     {
         float closestDist = float.MaxValue;
