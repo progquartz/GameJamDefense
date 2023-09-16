@@ -19,9 +19,9 @@ public class MobHordManager : MonoBehaviour
     [SerializeField]
     private bool isMobAllSpawned = false;
     [SerializeField]
-    private bool isMobSpawnStarted = false;
+    public bool isMobSpawnStarted = false;
     [SerializeField]
-    private bool isStageInRest = true;
+    public bool isStageInRest = true;
 
     private float mobSpawnWaiter = 0.0f;
 
@@ -138,6 +138,9 @@ public class MobHordManager : MonoBehaviour
 
     public void ClearAllMobs()
     {
+        isMobAllSpawned = false;
+        isMobSpawnStarted = false;
+        isStageInRest = true;
         int childCount = transform.childCount;
         for(int i = 0; i < childCount; i++)
         {

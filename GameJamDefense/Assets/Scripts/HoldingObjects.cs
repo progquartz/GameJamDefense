@@ -16,6 +16,13 @@ public class HoldingObjects : MonoBehaviour
     private float holdTimeNeeded = 0.5f;
 
     public bool isHoldingObject = false;
+    public AudioSource[] audioSources;
+
+    private void Start()
+    {
+        audioSources = GetComponents<AudioSource>();
+    }
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -26,9 +33,12 @@ public class HoldingObjects : MonoBehaviour
         {
             if (holdingObject != null)
             {
-                // holdingObject.GetComponent<> // holdingobject의 hold 풀음 관련으로 함수 콜업.
-                holdingObject = null;
+                if(clickedObject.tag == "Movable" || clickedObject.tag == "TowerAttackBase" || clickedObject.tag == "TowerBase" || clickedObject.tag == "WireConnector" || clickedObject.tag == "Power")
+                {
+                    audioSources[1].Play();
+                }
                 UnholdObject();
+                holdingObject = null;
             }
             clickedObject = null;
             holdingTime = 0;
@@ -62,12 +72,13 @@ public class HoldingObjects : MonoBehaviour
 
     private void UnholdObject()
     {
-        if(clickedObject.tag == "TowerAttackBase" || clickedObject.tag == "TowerBase")
+        if(holdingObject.tag == "TowerAttackBase" || holdingObject.tag == "TowerBase")
         {
             clickedObject.GetComponent<BaseWithSocket>().UnholdFromMouse();
         }
-        if(clickedObject.tag == "WireConnector")
+        if(holdingObject.tag == "WireConnector")
         {
+            Debug.Log("됐냐" + clickedObject.GetComponent<WireConnector>().IsConnectorConnected() + " " + clickedObject.GetComponent<WireConnector>().isBeingHolded );
             clickedObject.GetComponent<WireConnector>().UnholdFromMouse();
         }
     }
@@ -123,7 +134,13 @@ public class HoldingObjects : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
         if (hit.collider != null)
         {
-            if(hit.collider.gameObject.tag == "TowerBase" || hit.collider.gameObject.tag == "TowerAttackBase" || hit.collider.gameObject.tag == "TowerAttackCannon" || hit.collider.gameObject.tag == "WireConnector" || hit.collider.gameObject.tag == "Power")
+            if(hit.collider.gameObject.tag == "TowerBase" || hit.collider.gameObject.tag == "TowerAttackBase" || hit.collider.gameObject.tag == "WireConnector" || hit.collider.gameObject.tag == "Power")
+            {
+                clickedObject = hit.collider.gameObject;
+                audioSources[0].Play();
+                Debug.Log(hit.collider.gameObject.name);
+            }
+            else if(hit.collider.gameObject.tag == "TowerAttackCannon")
             {
                 clickedObject = hit.collider.gameObject;
                 Debug.Log(hit.collider.gameObject.name);

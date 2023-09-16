@@ -16,18 +16,23 @@ public class TowerAttackCannon : MonoBehaviour
     private Transform bulletParents;
     [SerializeField]
     private Animator cannonAnimator;
+    [SerializeField]
+    private AudioSource cannonShoot;
     private bool isRifleFirstShooting = true;
 
     int bulletIndex = 0;
 
     public void GetEnergy(int energy)
     {
-        electricityGot += energy;
-        Debug.Log(electricityGot + " / " + electricityCap);
-        if (electricityGot >= electricityCap)
+        if(MobHordManager.instance.isMobSpawnStarted || !MobHordManager.instance.isStageInRest)
         {
-            electricityGot -= electricityCap;
-            ShootCannon();
+            electricityGot += energy;
+            Debug.Log(electricityGot + " / " + electricityCap);
+            if (electricityGot >= electricityCap)
+            {
+                electricityGot -= electricityCap;
+                ShootCannon();
+            }
         }
     }
 
@@ -38,6 +43,7 @@ public class TowerAttackCannon : MonoBehaviour
 
     public void ShootCannon()
     {
+        cannonShoot.Play();
         if(transform.GetChild(0).childCount == 2)
         {
             cannonAnimator.SetBool("isFirst", isRifleFirstShooting);

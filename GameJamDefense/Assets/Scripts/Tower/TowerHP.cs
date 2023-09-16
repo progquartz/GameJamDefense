@@ -23,6 +23,7 @@ public class TowerHP : MonoBehaviour
     }
     private void DestroyObject()
     {
+        SoundManager.instance.PlayPlatformBreak();
         Destroy(destroyingObject);
     }
 }

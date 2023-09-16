@@ -9,6 +9,8 @@ public class EnemyTargetingAndMoving : MonoBehaviour
     [SerializeField]
     private float moveSpeed = 0.3f;
     [SerializeField]
+    private int score = 1;
+    [SerializeField]
     private int damage = 3;
     public List<Transform> allTargetableObjects;
     public Transform lockedOnObject;
@@ -16,7 +18,6 @@ public class EnemyTargetingAndMoving : MonoBehaviour
     private EnemyAttackRangeCheck enemyAttackRangeChecker;
     [SerializeField]
     private Animator enemyAnimator;
-    
 
     // Update is called once per frame
     void Update()
@@ -34,6 +35,8 @@ public class EnemyTargetingAndMoving : MonoBehaviour
 
         if(hp <= 0)
         {
+            GameManager.instance.GetScore(1);
+            SoundManager.instance.PlayEnemyDeath();
             Destroy(this.gameObject);
         }
         
@@ -60,7 +63,7 @@ public class EnemyTargetingAndMoving : MonoBehaviour
         CheckGameOver();
         FindClosest();
         FlushData();
-        
+
 
 
     }
@@ -73,7 +76,7 @@ public class EnemyTargetingAndMoving : MonoBehaviour
             allTargetableObjects.Add(obJ.transform);
         }
         // ¿ÍÀÌ¾î.
-        foreach (GameObject obJ in GameObject.FindGameObjectsWithTag("WireSocket"))
+        foreach (GameObject obJ in GameObject.FindGameObjectsWithTag("WireConnector"))
         {
             allTargetableObjects.Add(obJ.transform);
         }
@@ -94,9 +97,7 @@ public class EnemyTargetingAndMoving : MonoBehaviour
         if(allTargetableObjects.Count == 0)
         {
             GameManager.instance.isGameOver = true;
-            GameObject tmp = new GameObject();
-            tmp.transform.position = new Vector3(-200, 540, 0);
-            allTargetableObjects.Add(tmp.transform);
+            allTargetableObjects.Add(GameObject.Find("mobTarget").transform);
         }
     }
     private void FindClosest()

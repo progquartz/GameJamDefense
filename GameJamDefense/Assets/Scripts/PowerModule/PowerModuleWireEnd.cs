@@ -16,7 +16,7 @@ public class PowerModuleWireEnd : MonoBehaviour
         }
         if(Mathf.Abs( transform.position.y - powerModule.position.y) > 0.2f)
         {
-            transform.Translate(0, Mathf.Lerp(transform.position.y, powerModule.position.y, 5.0f) * Time.deltaTime * 2.5f, 0);
+            transform.position = new Vector3(-10f, Mathf.Lerp(transform.position.y, powerModule.position.y, Time.deltaTime * 2f ) , 0);
         }
         transform.LookAt(powerModule);
     }

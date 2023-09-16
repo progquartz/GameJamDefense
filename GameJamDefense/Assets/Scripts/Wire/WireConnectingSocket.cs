@@ -12,6 +12,7 @@ public class WireConnectingSocket : MonoBehaviour
 {
     [SerializeField]
     public bool isSocketAttached = false;
+    public bool checkSum = false;
     [SerializeField]
     private GameObject attachedSocket = null;
     private GameObject ownParentModule = null;
@@ -49,7 +50,7 @@ public class WireConnectingSocket : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         Debug.Log(collision.gameObject.name);
-        if (attachedSocket == collision.gameObject && isSocketAttached)
+        if (attachedSocket == collision.gameObject && isSocketAttached )
         {
             attachedSocket = null;
             isSocketAttached = false;
@@ -73,4 +74,5 @@ public class WireConnectingSocket : MonoBehaviour
             ownParentModule.GetComponent<TowerBase>().GetEnergy(amount);
         }
     }
+
 }
