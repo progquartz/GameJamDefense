@@ -2,7 +2,7 @@
 
 # Doodle Defense
 
-- 한국기술교육대학교 BCSD 내 게임잼 참가작
+- 게임잼 참가작
 - 작품 플레이 링크
 https://www.youtube.com/watch?v=P1tBBxaDFh8&ab_channel=ProgQuartz
 
